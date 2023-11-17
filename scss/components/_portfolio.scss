@@ -7,7 +7,6 @@
   &__container {
     display: flex;
     flex-direction: column;
-    
   }
 
   &__info {
@@ -44,7 +43,7 @@
     }
     @include mobile {
       flex-wrap: wrap;
-      flex-direction: column;
+      align-items: center;
     }
 
     &_container {
@@ -52,10 +51,15 @@
       flex-wrap: wrap;
       gap: 28px;
       max-width: 540px;
+      @include mobile {
+        justify-content: center;
+      }
     }
   }
 
   &__card-big {
-    max-width: 540px;
+    @include mobile {
+      max-width: 256px;
+    }
   }
 }
