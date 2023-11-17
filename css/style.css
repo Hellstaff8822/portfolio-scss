@@ -52,6 +52,10 @@ body {
 
 .header {
   padding: 16px 0;
+  position: sticky;
+  top: 0;
+  background: #020617;
+  z-index: 4;
 }
 .header .container {
   display: -webkit-box;
@@ -66,7 +70,7 @@ body {
   gap: 20px;
 }
 .header__logo {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-weight: 700;
   display: -webkit-box;
