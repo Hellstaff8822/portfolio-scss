@@ -1,0 +1,92 @@
+.experience {
+  padding: 85px 0;
+  background: #191d28;
+  @include mobile {
+    padding: 60px 0;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 730px;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    color: $color-title;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__descr {
+    color: $color-descr;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 286px;
+  }
+
+  &__card {
+    display: flex;
+    gap: 29px;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card-item {
+    background: $body-bg;
+    border-radius: 12px;
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    @include tablet {
+    }
+  }
+
+  &__card-data {
+    color: $subtitle-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  &__card-title {
+    color: $primary-color;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 41px;
+  }
+
+  &__card-subtitle {
+    color: $subtitle-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  &__card-descr {
+    color: $color-descr;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}

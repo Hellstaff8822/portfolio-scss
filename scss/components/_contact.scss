@@ -1,0 +1,126 @@
+.contact {
+  padding: 96px 0;
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $color-title;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 24px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__descr {
+    color: $color-descr;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 685px;
+    margin-bottom: 56px;
+    @include mobile {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__a {
+    color: $color-title;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+    span {
+      color: $primary-color;
+    }
+    &:hover {
+      color: #0830f9;
+    }
+  }
+  &__bottom-container {
+    display: flex;
+    align-items: center;
+    gap: 233px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 100px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__field {
+    display: block;
+    margin-bottom: 32px;
+    ::placeholder {
+      color: $color-title;
+    }
+  }
+
+  &__name {
+    display: block;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: $bacground-input;
+    padding: 12px;
+    font-size: 16px;
+    color: $color-title;
+    font-weight: 400;
+    line-height: 41px;
+    border-radius: 4px;
+    min-height: 63px;
+    min-width: 350px;
+    @include tablet {
+      min-height: 63px;
+      min-width: 300px;
+    }
+    @include mobile {
+      min-height: 63px;
+      min-width: 150px;
+    }
+  }
+
+  &__text {
+    display: block;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 12px;
+    color: $color-title;
+    border-radius: 4px;
+    min-height: 166px;
+    min-width: 540px;
+    background: $bacground-input;
+    font-size: 16px;
+    font-weight: 400;
+    resize: none;
+    line-height: 41px;
+    @include tablet {
+      min-height: 136px;
+      min-width: 400px;
+    }
+    @include mobile {
+      min-height: 63px;
+      min-width: 240px;
+    }
+  }
+}

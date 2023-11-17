@@ -1,0 +1,61 @@
+.portfolio {
+  padding: 96px 0;
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    color: $color-title;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 64px;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__descr {
+    color: $color-descr;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 461px;
+  }
+
+  &__card {
+    display: flex;
+    gap: 28px;
+    @include tablet {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    @include mobile {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    &_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      max-width: 540px;
+    }
+  }
+
+  &__card-big {
+    max-width: 540px;
+  }
+}
