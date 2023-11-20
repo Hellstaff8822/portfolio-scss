@@ -1,18 +1,18 @@
 .about {
-  padding-top: 96px;
-  padding-bottom: 133px;
+  padding-top: 96rem;
+  padding-bottom: 133rem;
   @include mobile {
-    padding: 60px 0;
+    padding: 60rem 0;
   }
-  &__container{
+  &__container {
     @include tablet {
       flex-shrink: inherit;
-      padding-left: 40px;
-  
+      padding-left: 40rem;
     }
     @include mobile {
       flex-direction: column-reverse;
-      padding-left: 45px;
+      padding-left: 45rem;
+      max-width: 525em;
     }
   }
   &__image {
@@ -29,21 +29,22 @@
 
   &__image-backdrop {
     position: absolute;
-    width: calc(100% - 4px);
-    height: calc(100% - -8px);
-    right: 38px;
-    bottom: -28px;
-    border-radius: 24px;
-    border: 16px solid #eab308;
+    width: calc(100% - 4rem);
+    height: calc(100% - -8rem);
+    right: 38rem;
+    bottom: -28rem;
+    border-radius: 24rem;
+    border: 16rem solid #eab308;
     z-index: 1;
   }
 
   &__title {
     color: #f3f4f6;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
-    line-height: 64px;
-    margin-bottom: 32px;
+    line-height: 64rem;
+    margin-bottom: 32rem;
+
     span {
       color: $primary-color;
     }
@@ -51,14 +52,14 @@
 
   &__descr {
     color: $color-descr;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 27px;
-    margin-bottom: 40px;
-    max-width: 461px;
+    line-height: 27rem;
+    margin-bottom: 40rem;
+    max-width: 461rem;
     &_bottom {
-      margin-top: 18px;
-      max-width: 509px;
+      margin-top: 18rem;
+      max-width: 509rem;
     }
   }
 }
@@ -66,6 +67,5 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 89px;
-  
+  gap: 89rem;
 }

@@ -1,12 +1,15 @@
 .portfolio {
-  padding: 96px 0;
+  padding: 96rem 0;
   @include mobile {
-    padding: 60px 0;
+    padding: 60rem 0;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
+    @include mobile {
+      max-width: 540em;
+    }
   }
 
   &__info {
@@ -18,9 +21,9 @@
   &__title {
     color: $color-title;
     text-align: center;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 64rem;
     span {
       color: $primary-color;
     }
@@ -28,15 +31,16 @@
 
   &__descr {
     color: $color-descr;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 27px;
-    max-width: 461px;
+    line-height: 27rem;
+    max-width: 461rem;
   }
 
   &__card {
     display: flex;
-    gap: 28px;
+    gap: 28rem;
+
     @include tablet {
       flex-wrap: wrap;
       flex-direction: column;
@@ -45,12 +49,17 @@
       flex-wrap: wrap;
       align-items: center;
     }
-
+    &-item {
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.08);
+      }
+    }
     &_container {
       display: flex;
       flex-wrap: wrap;
-      gap: 28px;
-      max-width: 540px;
+      gap: 28rem;
+      max-width: 540rem;
       @include mobile {
         justify-content: center;
       }
@@ -58,6 +67,10 @@
   }
 
   &__card-big {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.001);
+    }
     @include mobile {
       max-width: 256px;
     }

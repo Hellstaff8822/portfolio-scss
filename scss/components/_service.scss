@@ -1,8 +1,8 @@
 .service {
-  padding: 96px 0;
+  padding: 96rem 0;
   background: $section-bg;
   @include mobile {
-    padding: 60px 0;
+    padding: 60rem 0;
   }
 
   &__container {
@@ -12,21 +12,22 @@
       flex-direction: column;
       padding-left: 0;
       padding: 0;
+      max-width: 540em;
     }
   }
 
   &__info {
-    max-width: 461px;
+    max-width: 461rem;
     @include mobile {
-      padding-left: 20px;
+      padding-left: 20rem;
     }
   }
 
   &__title {
     color: $color-title;
-    font-size: 42px;
+    font-size: 42rem;
     font-weight: 700;
-    line-height: 64px;
+    line-height: 64rem;
     span {
       color: $primary-color;
     }
@@ -34,14 +35,14 @@
 
   &__descr {
     color: $color-descr;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 27rem;
   }
 
   &__card {
     display: flex;
-    gap: 30px;
+    gap: 30rem;
     @include tablet {
       flex-wrap: wrap;
       justify-content: center;
@@ -53,10 +54,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 32px;
-    gap: 32px;
+    padding: 32rem;
+    gap: 32rem;
     background: $body-bg;
-    border-radius: 12px;
+    border-radius: 12rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.08);
+    }
+    @include tablet {
+      padding: 39rem;
+      gap: 10rem;
+    }
   }
 
   &__card-img {
@@ -66,18 +76,18 @@
   &__card-title {
     color: $color-title;
     text-align: center;
-    font-size: 26px;
+    font-size: 26rem;
     font-weight: 700;
-    line-height: 41px;
-    max-width: 204px;
-    margin-bottom: 16px;
+    line-height: 41rem;
+    max-width: 204rem;
+    margin-bottom: 16rem;
   }
 
   &__card-descr {
     color: $color-descr;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 27px;
-    max-width: 286px;
+    line-height: 27rem;
+    max-width: 286rem;
   }
 }

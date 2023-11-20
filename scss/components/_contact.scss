@@ -1,7 +1,7 @@
 .contact {
-  padding: 96px 0;
+  padding: 96rem 0;
   @include mobile {
-    padding: 60px 0;
+    padding: 60rem 0;
   }
 
   &__container {
@@ -12,11 +12,11 @@
   &__title {
     color: $color-title;
     text-align: center;
-    font-size: 42px;
+    font-size: 42rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 64px;
-    margin-bottom: 24px;
+    line-height: 64rem;
+    margin-bottom: 24rem;
     span {
       color: $primary-color;
     }
@@ -25,26 +25,27 @@
   &__descr {
     color: $color-descr;
     text-align: center;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 27px;
-    max-width: 685px;
-    margin-bottom: 56px;
+    line-height: 27rem;
+    max-width: 685rem;
+    margin-bottom: 56rem;
     @include mobile {
-      margin-bottom: 28px;
+      margin-bottom: 28rem;
     }
   }
 
   &__contacts {
     display: flex;
-    gap: 16px;
+    gap: 16rem;
   }
 
   &__a {
     color: $color-title;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    line-height: 41px;
+    line-height: 41rem;
+    transition:  0.3s all ease;
     span {
       color: $primary-color;
     }
@@ -55,10 +56,10 @@
   &__bottom-container {
     display: flex;
     align-items: center;
-    gap: 233px;
+    gap: 233rem;
     @include tablet {
       flex-wrap: wrap;
-      gap: 100px;
+      gap: 100rem;
     }
   }
   &__form {
@@ -69,7 +70,7 @@
 
   &__field {
     display: block;
-    margin-bottom: 32px;
+    margin-bottom: 32rem;
     ::placeholder {
       color: $color-title;
     }
@@ -81,21 +82,16 @@
     outline: 0;
     width: 100%;
     background: $bacground-input;
-    padding: 12px;
-    font-size: 16px;
+    padding: 12rem;
+    font-size: 16rem;
     color: $color-title;
     font-weight: 400;
-    line-height: 41px;
-    border-radius: 4px;
-    min-height: 63px;
-    min-width: 350px;
+    line-height: 41rem;
+    border-radius: 4rem;
+    min-height: 63rem;
+    min-width: 350rem;
     @include tablet {
-      min-height: 63px;
-      min-width: 300px;
-    }
-    @include mobile {
-      min-height: 63px;
-      min-width: 150px;
+      min-width: 400rem;
     }
   }
 
@@ -104,23 +100,20 @@
     border: 0;
     outline: 0;
     width: 100%;
-    padding: 12px;
+    padding: 12rem;
     color: $color-title;
-    border-radius: 4px;
-    min-height: 166px;
-    min-width: 540px;
+    border-radius: 4rem;
+    min-height: 166rem;
+    min-width: 540rem;
     background: $bacground-input;
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
     resize: none;
-    line-height: 41px;
+    line-height: 41rem;
+    font-family: Lexend Deca;
     @include tablet {
-      min-height: 136px;
-      min-width: 400px;
-    }
-    @include mobile {
-      min-height: 63px;
-      min-width: 240px;
+      min-height: 136rem;
+      min-width: 400rem;
     }
   }
 }

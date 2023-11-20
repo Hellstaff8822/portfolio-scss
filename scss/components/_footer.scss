@@ -1,5 +1,5 @@
 .footer {
-  padding: 56px 0;
+  padding: 56rem 0;
   &__container {
     display: flex;
     flex-direction: column;
@@ -12,35 +12,62 @@
   &__title {
     color: $white;
     text-align: center;
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 24rem;
   }
 
   &__descr {
     color: $color-descr;
     text-align: center;
-    font-size: 16px;
+    font-size: $fz-descr;
     font-weight: 400;
-    line-height: 27px;
-    margin-bottom: 56px;
-    max-width: 685px;
+    line-height: 27rem;
+    margin-bottom: 56rem;
+    max-width: 685rem;
   }
   &__social {
     display: flex;
-    gap: 16px;
-    font-size: 24px;
+    gap: 16rem;
+    font-size: 24rem;
   }
   .fa-brands {
     color: $color-social;
+    transition: 0.3s all ease;
     &:hover {
       color: $primary-color;
     }
   }
   .fa-linkedin {
     color: $primary-color;
+    transition: 0.3s all ease;
     &:hover {
       color: rgb(5, 151, 249);
+    }
+  }
+  .fa-pinterest{
+    &:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+  .fa-youtube{
+    &:hover {
+      color: rgb(249, 29, 5);
+    }
+  }
+  .fa-instagram{
+    &:hover {
+      color: rgb(216, 5, 249);
+    }
+  }
+  .fa-x-twitter{
+    &:hover {
+      color: rgb(5, 249, 135);
+    }
+  }
+  .fa-facebook{
+    &:hover {
+      color: rgb(5, 143, 249);
     }
   }
 }
