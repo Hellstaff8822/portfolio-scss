@@ -77,25 +77,21 @@
     }
   }
 
-
-
-
   swiper-container {
     display: none;
     width: 100%;
     height: 100%;
     padding-top: 15px;
-    @include tablet-small {
-      display:flex;
+    @include mobile {
+      display: flex;
     }
-
   }
 
   swiper-slide {
     :root {
       --swiper-navigation-size: 44rem;
-  }    
-  text-align: center;
+    }
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,9 +105,8 @@
     border-radius: 12rem;
 
     transition: none;
-      &:hover {
-        transform:none;
-      }
-    
+    &:hover {
+      transform: none;
+    }
   }
 }

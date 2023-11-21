@@ -91,7 +91,7 @@
     min-height: 63rem;
     min-width: 350rem;
     @include tablet {
-      min-width: 400rem;
+      min-width: 500rem;
     }
   }
 
@@ -113,7 +113,7 @@
     font-family: Lexend Deca;
     @include tablet {
       min-height: 136rem;
-      min-width: 400rem;
+      min-width: 500rem;
     }
   }
 }

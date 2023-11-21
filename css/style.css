@@ -600,7 +600,7 @@ html {
   height: 100%;
   padding-top: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .portfolio swiper-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -893,7 +893,7 @@ html {
 }
 @media (max-width: 992px) {
   .contact__name {
-    min-width: 400rem;
+    min-width: 500rem;
   }
 }
 .contact__text {
@@ -916,7 +916,7 @@ html {
 @media (max-width: 992px) {
   .contact__text {
     min-height: 136rem;
-    min-width: 400rem;
+    min-width: 500rem;
   }
 }
 
