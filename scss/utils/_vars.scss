@@ -32,3 +32,16 @@ $mobile: 576px;
 $fz-title: 42rem;
 $fz-descr: 16rem;
 $fz-card: 26rem;
+
+
+
+:root {
+    --swiper-navigation-color: #{$primary-color};
+    --swiper-pagination-color: #{$primary-color};
+    --swiper-pagination-bullet-inactive-color: #{$section-bg}; 
+    --swiper-pagination-bullet-inactive-opacity: .6;
+    --swiper-navigation-size: 44rem;
+    --swiper-pagination-bullet-horizontal-gap: 15rem;
+    --swiper-pagination-bullet-width: 20rem;
+    --swiper-pagination-bullet-height: 20rem;
+}

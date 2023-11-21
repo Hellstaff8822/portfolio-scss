@@ -19,6 +19,17 @@ li {
   list-style: none;
 }
 
+:root {
+  --swiper-navigation-color: #eab308;
+  --swiper-pagination-color: #eab308;
+  --swiper-pagination-bullet-inactive-color: #111827;
+  --swiper-pagination-bullet-inactive-opacity: .6;
+  --swiper-navigation-size: 44rem;
+  --swiper-pagination-bullet-horizontal-gap: 15rem;
+  --swiper-pagination-bullet-width: 20rem;
+  --swiper-pagination-bullet-height: 20rem;
+}
+
 body {
   font-family: "Lexend Deca", sans-serif;
   background: #020617;
@@ -470,7 +481,7 @@ html {
 }
 @media (max-width: 576px) {
   .portfolio {
-    padding: 60rem 0;
+    padding: 60rem 18rem;
   }
 }
 .portfolio__container {
@@ -534,6 +545,7 @@ html {
 }
 @media (max-width: 576px) {
   .portfolio__card {
+    display: none;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-align: center;
@@ -581,6 +593,48 @@ html {
   .portfolio__card-big {
     max-width: 256px;
   }
+}
+.portfolio swiper-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding-top: 15px;
+}
+@media (max-width: 768px) {
+  .portfolio swiper-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.portfolio swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolio swiper-slide :root {
+  --swiper-navigation-size: 44rem;
+}
+.portfolio swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12rem;
+  -webkit-transition: none;
+  transition: none;
+}
+.portfolio swiper-slide img:hover {
+  -webkit-transform: none;
+          transform: none;
 }
 
 .experience {
