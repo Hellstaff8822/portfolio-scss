@@ -19,17 +19,6 @@ li {
   list-style: none;
 }
 
-:root {
-  --swiper-navigation-color: #eab308;
-  --swiper-pagination-color: #eab308;
-  --swiper-pagination-bullet-inactive-color: #111827;
-  --swiper-pagination-bullet-inactive-opacity: .6;
-  --swiper-navigation-size: 44rem;
-  --swiper-pagination-bullet-horizontal-gap: 15rem;
-  --swiper-pagination-bullet-width: 20rem;
-  --swiper-pagination-bullet-height: 20rem;
-}
-
 body {
   font-family: "Lexend Deca", sans-serif;
   background: #020617;
@@ -618,9 +607,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.portfolio swiper-slide :root {
-  --swiper-navigation-size: 44rem;
 }
 .portfolio swiper-slide img {
   display: block;
