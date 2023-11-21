@@ -481,7 +481,7 @@ html {
 }
 @media (max-width: 576px) {
   .portfolio {
-    padding: 60rem 18rem;
+    padding: 60rem 30rem;
   }
 }
 .portfolio__container {
